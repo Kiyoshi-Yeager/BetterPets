@@ -1,0 +1,7 @@
+name: BetterPets
+version: '1.0'
+main: me.yeagerist39.betterPets.BetterPets
+api-version: '1.21'
+prefix: BetterPets
+authors: [ Yeagerist39 ]
+website: https://discord.gg/wH7SyfPrq8
