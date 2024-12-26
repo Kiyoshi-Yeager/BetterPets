@@ -1,0 +1,35 @@
+pet_menu:
+  feeding_pet_button: "Feeding a pet"
+  visible_pet_name_button_on: "The pet's name is visible!"
+  visible_pet_name_button_off: "The pet's name is hidden!"
+  play_with_pet_button_on: "Play"
+  play_with_pet_button_off: "The pet doesn't want to play!"
+  play_with_pet_button_lore:
+      - "Points: %points%/%points_for_next_level%"
+      - "Current level: %level%"
+  pet_inventory_slot_lock: "Reach friendship level 5 to unlock this slot."
+
+pet_feeding_menu:
+  menu_name: "Feed your pet"
+  feed_button: "Feed it"
+
+messages:
+  this_pet_not_tamed: "This pet has not been tamed yet."
+  its_not_your_pet: "It's not your pet!"
+
+awards:
+  for_level_15:
+    name: "A loyal friend"
+    lore:
+      - "For the 10th level of friendship"
+  for_level_30:
+    name: "Pet's favorite toy"
+    lore:
+      - "For the 30th level of friendship"
+
+pet:
+  default_name: "%owner_name%`s dog"
+
+setting:
+  disable_shulkerbox_in_pet_inventory: true
+  pet_play_cooldown: 10 #milliseconds (3600000 == 1 hour)
