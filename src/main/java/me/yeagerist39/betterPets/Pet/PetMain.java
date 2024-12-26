@@ -350,7 +350,7 @@ public class PetMain implements Listener {
             inventory.setItem(12, new ItemBuilder(Material.REDSTONE, 1).setName(ConfigFile.play_with_pet_button_on).setLore(lore).build());
         } else {
             if (System.currentTimeMillis() - pet.lastFriendReward > ConfigFile.setting_pet_play_cooldown) { //время кд кнопки играть
-                inventory.setItem(12, new ItemBuilder(Material.REDSTONE, 1).setName(ConfigFile.play_with_pet_button_off).setLore(lore).build());
+                inventory.setItem(12, new ItemBuilder(Material.REDSTONE, 1).setName(ConfigFile.play_with_pet_button_on).setLore(lore).build());
             } else {
                 inventory.setItem(12, new ItemBuilder(Material.GUNPOWDER, 1).setName(ConfigFile.play_with_pet_button_off).setLore(lore).build());
             }
@@ -385,7 +385,9 @@ public class PetMain implements Listener {
             pet.friendLevel += 1;
             wolf.getPersistentDataContainer().set(NamespacedKey.fromString("friend_level"), PersistentDataType.INTEGER, pet.friendLevel);
 
-            wolf.setMaxHealth(wolf.getMaxHealth() + 1);
+            if (ConfigFile.setting_get_1_health_for_1_friend_level) {
+                wolf.setMaxHealth(wolf.getMaxHealth() + 1);
+            }
 
             Player player = Bukkit.getPlayer(UUID.fromString(wolf.getPersistentDataContainer().get(NamespacedKey.fromString("owner_uuid"), PersistentDataType.STRING)));
 

@@ -30,8 +30,9 @@ public class ConfigFile {
 
     public static final String default_name = ChatColor.translateAlternateColorCodes('&', BetterPets.getInstance().getConfig().getString("pet.default_name"));
 
-    public static final Boolean setting_disable_shulkerbox_in_pet_inventory = BetterPets.getInstance().getConfig().getBoolean("setting.disable_shulkerbox_in_pet_inventory");
+    public static final boolean setting_disable_shulkerbox_in_pet_inventory = BetterPets.getInstance().getConfig().getBoolean("setting.disable_shulkerbox_in_pet_inventory");
     public static final Long setting_pet_play_cooldown = BetterPets.getInstance().getConfig().getLong("setting.pet_play_cooldown");
+    public static final boolean setting_get_1_health_for_1_friend_level = BetterPets.getInstance().getConfig().getBoolean("setting.get_1_health_for_1_friend_level");
     public static final String for_cooldown_setting = "533a4559-e55c-18b3-8456-555563322002";
 
     public static List<String> loreTranslate(List<String> lore) {
