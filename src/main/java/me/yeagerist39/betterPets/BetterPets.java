@@ -14,6 +14,7 @@ public final class BetterPets extends JavaPlugin {
         // Plugin startup logic
         instance = this;
         getServer().getPluginManager().registerEvents(PetMain.getInstance(), this);
+        saveDefaultConfig();
     }
 
     @Override

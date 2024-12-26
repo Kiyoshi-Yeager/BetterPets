@@ -1,5 +1,6 @@
 package me.yeagerist39.betterPets.utils;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
@@ -11,6 +12,10 @@ import java.util.List;
 import java.util.Map;
 
 public class ItemBuilder {
+
+    public static String format(String text) {
+        return ChatColor.translateAlternateColorCodes('&', text);
+    }
 
     public static ItemBuilder open(ItemStack item) {
         ItemBuilder itemBuilder = new ItemBuilder(item.getType(), item.getAmount());
@@ -36,7 +41,7 @@ public class ItemBuilder {
     }
 
     public ItemBuilder setLore(List<String> lore) {
-        lore.replaceAll(ChatUtil::format);
+        lore.replaceAll(ItemBuilder::format);
 
         itemMeta.setLore(lore);
 
@@ -49,7 +54,7 @@ public class ItemBuilder {
                 lore.set(i, lore.get(i).replace(key, args.get(key)));
             }
 
-            lore.set(i,  ChatUtil.format(lore.get(i)));
+            lore.set(i,  ItemBuilder.format(lore.get(i)));
         }
 
         itemMeta.setLore(lore);
