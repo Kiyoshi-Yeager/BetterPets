@@ -409,6 +409,7 @@ public class PetMain implements Listener {
                 }
             }
             updateSlot12(pet, inventory);
+            //
         }
     }
 }
