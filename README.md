@@ -9,10 +9,11 @@
 - **Friend Points and Levels**: Play with your pet to earn Friend Points. Accumulate enough points to increase your pet's Friend Level. Each level grants additional benefits:
     - **Health Boost**: Gain 0.5 hearts per Friend Level.
     - **Special Rewards**: Unlock unique rewards at levels 5, 10, 15, 20, and 30, including:
-        - Ability to give items directly to your pet.
-        - Additional health boost (+2 hearts).
-        - Two memorable cosmetic rewards.
-        - Increased damage (+1 heart).
+        - 5 - Ability to give items directly to your pet.
+        - 10 - Additional health boost (+2 hearts).
+        - 15 -  Memorable cosmetic rewards.
+        - 20 - Increased damage (+1 heart).
+        - 30 - Memorable cosmetic rewards.
 
 - **Feeding System**: Feed your pet with both standard food and non-standard items that weren't previously usable in vanilla Minecraft. These new foods provide various effects to your pet.:
     - GOLDEN_APPLE - Feed the golden apple to your pet.
